@@ -20,7 +20,7 @@ public class PostDeleteOkController implements Action {
 		postDAO.delete(Long.parseLong(req.getParameter("id")));
 		
 		result.setRedirect(true);
-		result.setPath("list.jsp");
+		result.setPath("list.post");
 		return result;
 	}
 
